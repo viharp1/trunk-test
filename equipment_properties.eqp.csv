@@ -1,0 +1,475 @@
+Equipment Properties
+
+VERSION,116
+TABLE Info
+OCH Mode,DCL Bitrate,OCH Bitrate,LSType WDM,LSType SONET,SONET Bitrate,SONET/SDH,Use OADMs,Discrete DXC,Discrete ODXC,Discrete OXC,Discrete ODUXC,Regenerate via DXC,Miles/Km,Blocking OXCs,Integrated OXC TMs,Integrated OADM TMs,Tunable Transponders,WC Cost,Regen Cost,Resource Assignment
+VWP,STS-3,OC-48,LH 40-WDM,No-WDM,OC-12,SONET,NO,NO,NO,NO,NO,NO,MILES,NO,NO,NO,NO,0.8,0.6,Contiguous
+
+
+TABLE Ring Info
+Ring support via PatchPanel
+YES
+
+
+TABLE Pure Bit-Rates
+Layer,Name,Bitrate,Payload,Maps To,Technology,Trib Slots
+OCH,OC-3,,149760000,ODU0,SONET,
+OCH,OC-12,,599040000,ODU0,SONET,
+OCH,OC-48,,2396160000,ODU1,SONET,
+OCH,OC-192,,9584640000,ODU2,SONET,
+OCH,OC-768,,38338560000,ODU3,SONET,
+OCH,OC-1536,,76971456000,ODU4,SONET,
+OCH,OC-3072,,153354240000,,SONET,
+OCH,STM-1,,149760000,ODU0,SDH,
+OCH,STM-4,,599040000,ODU0,SDH,
+OCH,STM-16,,2396160000,ODU1,SDH,
+OCH,STM-64,,9584640000,ODU2,SDH,
+OCH,STM-256,,38338560000,ODU3,SDH,
+OCH,STM-512,,76971456000,ODU4,SDH,
+OCH,STM-1024,,153354240000,,SDH,
+OCH,1 GbE,,1040256000,ODU0,Other,
+OCH,10 GbE WAN PHY,,9294200000,ODU2,Other,
+OCH,10 GbE LAN PHY,,10000000000,ODU2e,Other,
+OCH,40 GbE,,40000000000,ODU3,Other,
+OCH,100 GbE,,100000000000,ODU4,Other,
+OCH,ODU0,,1238954309.6,,ODU,0
+OCH,ODU1,,2488320000,,ODU,0
+OCH,ODU2,,9995276962,,ODU,0
+OCH,ODU2e,,10356012658.2,,ODU,0
+OCH,ODU3,,40150519322,,ODU,0
+OCH,ODU4,,104355975330.4,,ODU,0
+DCL,STS-1,,48384000,,SONET,
+DCL,STS-3,,149760000,,SONET,
+DCL,STS-12,,600768000,,SONET,
+DCL,STS-48,,2404800000,,SONET,
+DCL,STS-192,,9620928000,,SONET,
+DCL,STM-1,,149760000,,SDH,
+DCL,STM-4,,600768000,,SDH,
+DCL,STM-16,,2404800000,,SDH,
+DCL,STM-64,,9620928000,,SDH,
+LOP,VT-1.5,,1544000,,SONET,
+LOP,VT-2,,2048000,,SONET,
+LOP,VT-3,,3152000,,SONET,
+LOP,VT-6,,6312000,,SONET,
+LOP,VC-11,,1544000,,SDH,
+LOP,VC-12,,2048000,,SDH,
+LOP,VC-2,,6312000,,SDH,
+LOP,VC-3,,48384000,,SDH,
+LOP,VC-4,,149760000,,SDH,
+
+
+TABLE Virtual Bit-Rates
+Name,Layer,Base Bitrate,Concatenation Count,Payload
+1 GbE (SONET),DCL,STS-1,21,1016064000
+1 GbE (SDH),DCL,STM-1,7,1048320000
+
+
+TABLE Line Cost
+Item,Fixed,Length,Regen,OA
+Cable,0,0,0,0
+Fiber,0,0
+Channel,0,0
+
+
+TABLE Card Cost
+BitRate,SDH TM,Transponder SR,Protect. Transp. SR
+OC-3,15,7,10.5
+OC-12,25,12,18
+OC-48,30,15,22.5
+OC-192,100,50,75
+OC-768,300,150,225
+OC-1536,500,250,375
+OC-3072,900,450,675
+1 GbE,-1,13,19.5
+10 GbE WAN PHY,-1,50,75
+10 GbE LAN PHY,-1,150,225
+40 GbE,-1,150,225
+100 GbE,-1,350,525
+ODU0,-1,13,19.5
+ODU1,-1,15,22.5
+ODU2,-1,50,75
+ODU2e,-1,50,75
+ODU3,-1,150,225
+ODU4,-1,350,525
+
+
+TABLE Port Cost
+Bitrate,LOP TM Trib,LOP TM,SDH TM Trib,DXC Trib,DXC Trunk,ODXC DCL Trib,ODXC OCH Trib,ODXC Trunk,OXC Trib,OXC Trunk,Muxponder Trib,ODUXC Trib,ODUXC Trunk
+VT-1.5,0.1
+VT-2,0.25
+VT-3,0.75
+VT-6,1
+STS-1,5,0.25,0.5,,0.5,,,,
+STS-3,9,0.5,1,,1,,,,
+STS-12,16,1.25,2.5,,2.5,,,,
+STS-48,30,2.5,5,,5,,,,
+STS-192,55,5,10,,10,,,,
+1 GbE (SONET),100,1.5,3,,3,,,,
+OC-3,,1,,1,1,2.5,2.5,0.5,2,-1
+OC-12,,2.5,,2.5,2.5,5,5,1,2,-1
+OC-48,,5,,5,5,10,10,1.5,3,-1
+OC-192,,10,,10,10,15,15,2,5,-1
+OC-768,,20,,20,20,30,30,3,10,-1
+OC-1536,,30,,30,30,45,45,5,20,-1
+OC-3072,,45,,45,45,65,65,7,-1,-1
+1 GbE,,-1,,3,3,7,7,1.2,2,-1
+10 GbE WAN PHY,,-1,,10,10,15,15,2,5,-1
+10 GbE LAN PHY,,-1,,10,10,15,15,2,5,-1
+40 GbE,,-1,,20,20,30,30,3,10,-1
+100 GbE,,-1,,35,35,40,40,6,17,-1
+ODU0,,-1,,3.5,3.5,8,8,1.3,2,-1
+ODU1,,-1,,5,5,10,10,1.5,3,3
+ODU2,,-1,,10,10,15,15,2,5,5
+ODU2e,,-1,,10,10,15,15,2,5.1,-1
+ODU3,,-1,,20,20,30,30,3,10,10
+ODU4,,-1,,35,35,40,40,6,17,20
+
+
+TABLE Misc Cost
+Patch Panel Fixed,Patch Panel per Port
+100,1
+
+
+TABLE DCL Ring Models
+Name
+Generic
+
+
+TABLE Ring DCL Trib Cost
+BitRate,Generic
+STS-1,0.5
+STS-3,1
+STS-12,2.5
+STS-48,5
+STS-192,10
+1 GbE (SONET),3
+
+
+TABLE Ring ADM Cost
+DCL Ring Model,BitRate,ADM
+Generic,OC-3,0,4
+Generic,OC-3,1,6
+Generic,OC-3,2,10
+Generic,OC-12,0,10
+Generic,OC-12,1,15
+Generic,OC-12,2,25
+Generic,OC-48,0,25
+Generic,OC-48,1,40
+Generic,OC-48,2,65
+Generic,OC-192,0,65
+Generic,OC-192,1,100
+Generic,OC-192,2,160
+Generic,OC-768,0,160
+Generic,OC-768,1,250
+Generic,OC-768,2,400
+Generic,OC-1536,0,400
+Generic,OC-1536,1,650
+Generic,OC-1536,2,1000
+Generic,OC-3072,0,1000
+Generic,OC-3072,1,1500
+Generic,OC-3072,2,2500
+
+
+TABLE LSTypes
+Name,Bands,MAX WAVS,ULH,Transparent,Flexible Grid,Slot Width Granularity,Required Slots,Non-contiguous Slot Assignment,COST WDMTM,COST Channel Card,COST OADM,COST INT OADM,FLSP OA,FLSP REG,FLSP WDMTM,PWR OA,PWR REG,PWR WDMTM
+No-WDM,0 0 ,1,NO,YES,NO,50,1,NO,0 0 ,0,0 0 0 0 0 0 0 0 ,0 0 0 0 0 0 0 0 ,1,10,2,1,5,0
+LH 8-WDM,0 7 ,8,NO,YES,NO,50,1,NO,20 0 ,0,0 50 50 50 0 0 0 0 ,0 75 75 75 0 0 0 0 ,1,10,2,1,5,0
+LH 16-WDM,0 15 ,16,NO,YES,NO,50,1,NO,40 0 ,0,0 100 100 100 0 0 0 0 ,0 150 150 150 0 0 0 0 ,1,10,2,1,5,0
+LH 40-WDM,0 7 8 15 16 39 ,40,NO,YES,NO,50,1,NO,100 0 0 0 ,0,0 200 200 200 0 0 0 0 0 0 0 0 0 0 0 0 ,0 300 300 300 0 0 0 0 0 0 0 0 0 0 0 0 ,1,10,2,1,5,0
+LH 80-WDM,0 15 16 47 48 79 ,80,NO,YES,NO,50,1,NO,200 0 0 0 ,0,0 400 400 400 0 0 0 0 0 0 0 0 0 0 0 0 ,0 600 600 600 0 0 0 0 0 0 0 0 0 0 0 0 ,1,10,2,1,5,0
+ULH 40-WDM,0 7 8 15 16 39 ,40,YES,YES,NO,50,1,NO,100 0 0 0 ,0,0 200 200 200 0 0 0 0 0 0 0 0 0 0 0 0 ,0 300 300 300 0 0 0 0 0 0 0 0 0 0 0 0 ,1,10,2,1,5,0
+
+
+TABLE Amplification Types No-WDM
+Name,Default type,Maximum span length,Cost,Availability method,Availability value,Availability MTTR
+Default Amplification Type,YES,100,75 0 ,INHERIT,1,0
+
+
+TABLE Regeneration Types No-WDM
+Name,Default type,Maximum span length,Default maximum transparency length,Regenerate all channels,Cost,Availability method,Availability regenerator value,Availability regenerator MTTR,Availability transponder value,Availability transponder MTTR,Availability muxponder value,Availability muxponder MTTR
+Default Regeneration Type,YES,100,600,NO,100 0 ,INHERIT,1,0,1,0,1,0
+
+
+TABLE Bitrate-channelcost No-WDM
+Bit rate,Required slots,Default Regeneration Type regenerator,Default Regeneration Type transponder,Default Regeneration Type protection transponder,Default Regeneration Type muxponder,Default Regeneration Type transparency length
+OC-3,1,30,15,22.5,22.5,600
+OC-12,1,50,25,37.5,37.5,600
+OC-48,1,60,30,45,45,600
+OC-192,1,200,100,150,150,600
+OC-768,1,600,300,450,450,600
+OC-1536,1,1000,500,750,750,600
+OC-3072,1,1800,900,1350,1350,600
+1 GbE,1,54,27,40.5,40.5,600
+10 GbE WAN PHY,1,200,100,150,150,600
+10 GbE LAN PHY,1,200,100,150,150,600
+40 GbE,1,600,300,450,450,600
+100 GbE,1,1500,750,1125,1125,600
+ODU0,1,56,28,42,42,600
+ODU1,1,60,30,45,45,600
+ODU2,1,200,100,150,150,600
+ODU2e,1,200,100,150,150,600
+ODU3,1,600,300,450,450,600
+ODU4,1,1500,750,1125,1125,600
+
+
+TABLE Amplification Types LH 8-WDM
+Name,Default type,Maximum span length,Cost,Availability method,Availability value,Availability MTTR
+Default Amplification Type,YES,100,75 0 ,INHERIT,1,0
+
+
+TABLE Regeneration Types LH 8-WDM
+Name,Default type,Maximum span length,Default maximum transparency length,Regenerate all channels,Cost,Availability method,Availability regenerator value,Availability regenerator MTTR,Availability transponder value,Availability transponder MTTR,Availability muxponder value,Availability muxponder MTTR
+Default Regeneration Type,YES,100,600,NO,100 0 ,INHERIT,1,0,1,0,1,0
+
+
+TABLE Bitrate-channelcost LH 8-WDM
+Bit rate,Required slots,Default Regeneration Type regenerator,Default Regeneration Type transponder,Default Regeneration Type protection transponder,Default Regeneration Type muxponder,Default Regeneration Type transparency length
+OC-3,1,30,15,22.5,22.5,600
+OC-12,1,50,25,37.5,37.5,600
+OC-48,1,60,30,45,45,600
+OC-192,1,200,100,150,150,600
+OC-768,1,600,300,450,450,600
+OC-1536,1,1000,500,750,750,600
+OC-3072,1,1800,900,1350,1350,600
+1 GbE,1,54,27,40.5,40.5,600
+10 GbE WAN PHY,1,200,100,150,150,600
+10 GbE LAN PHY,1,200,100,150,150,600
+40 GbE,1,600,300,450,450,600
+100 GbE,1,1500,750,1125,1125,600
+ODU0,1,56,28,42,42,600
+ODU1,1,60,30,45,45,600
+ODU2,1,200,100,150,150,600
+ODU2e,1,200,100,150,150,600
+ODU3,1,600,300,450,450,600
+ODU4,1,1500,750,1125,1125,600
+
+
+TABLE Amplification Types LH 16-WDM
+Name,Default type,Maximum span length,Cost,Availability method,Availability value,Availability MTTR
+Default Amplification Type,YES,100,75 0 ,INHERIT,1,0
+
+
+TABLE Regeneration Types LH 16-WDM
+Name,Default type,Maximum span length,Default maximum transparency length,Regenerate all channels,Cost,Availability method,Availability regenerator value,Availability regenerator MTTR,Availability transponder value,Availability transponder MTTR,Availability muxponder value,Availability muxponder MTTR
+Default Regeneration Type,YES,100,600,NO,100 0 ,INHERIT,1,0,1,0,1,0
+
+
+TABLE Bitrate-channelcost LH 16-WDM
+Bit rate,Required slots,Default Regeneration Type regenerator,Default Regeneration Type transponder,Default Regeneration Type protection transponder,Default Regeneration Type muxponder,Default Regeneration Type transparency length
+OC-3,1,30,15,22.5,22.5,600
+OC-12,1,50,25,37.5,37.5,600
+OC-48,1,60,30,45,45,600
+OC-192,1,200,100,150,150,600
+OC-768,1,600,300,450,450,600
+OC-1536,1,1000,500,750,750,600
+OC-3072,1,1800,900,1350,1350,600
+1 GbE,1,54,27,40.5,40.5,600
+10 GbE WAN PHY,1,200,100,150,150,600
+10 GbE LAN PHY,1,200,100,150,150,600
+40 GbE,1,600,300,450,450,600
+100 GbE,1,1500,750,1125,1125,600
+ODU0,1,56,28,42,42,600
+ODU1,1,60,30,45,45,600
+ODU2,1,200,100,150,150,600
+ODU2e,1,200,100,150,150,600
+ODU3,1,600,300,450,450,600
+ODU4,1,1500,750,1125,1125,600
+
+
+TABLE Amplification Types LH 40-WDM
+Name,Default type,Maximum span length,Cost,Availability method,Availability value,Availability MTTR
+Default Amplification Type,YES,100,75 0 0 0 ,INHERIT,1,0
+
+
+TABLE Regeneration Types LH 40-WDM
+Name,Default type,Maximum span length,Default maximum transparency length,Regenerate all channels,Cost,Availability method,Availability regenerator value,Availability regenerator MTTR,Availability transponder value,Availability transponder MTTR,Availability muxponder value,Availability muxponder MTTR
+Default Regeneration Type,YES,100,600,NO,100 0 0 0 ,INHERIT,1,0,1,0,1,0
+
+
+TABLE Bitrate-channelcost LH 40-WDM
+Bit rate,Required slots,Default Regeneration Type regenerator,Default Regeneration Type transponder,Default Regeneration Type protection transponder,Default Regeneration Type muxponder,Default Regeneration Type transparency length
+OC-3,1,30,15,22.5,22.5,600
+OC-12,1,50,25,37.5,37.5,600
+OC-48,1,60,30,45,45,600
+OC-192,1,200,100,150,150,600
+OC-768,1,600,300,450,450,600
+OC-1536,1,1000,500,750,750,600
+OC-3072,1,1800,900,1350,1350,600
+1 GbE,1,54,27,40.5,40.5,600
+10 GbE WAN PHY,1,200,100,150,150,600
+10 GbE LAN PHY,1,200,100,150,150,600
+40 GbE,1,600,300,450,450,600
+100 GbE,1,1500,750,1125,1125,600
+ODU0,1,56,28,42,42,600
+ODU1,1,60,30,45,45,600
+ODU2,1,200,100,150,150,600
+ODU2e,1,200,100,150,150,600
+ODU3,1,600,300,450,450,600
+ODU4,1,1500,750,1125,1125,600
+
+
+TABLE Amplification Types LH 80-WDM
+Name,Default type,Maximum span length,Cost,Availability method,Availability value,Availability MTTR
+Default Amplification Type,YES,100,75 0 0 0 ,INHERIT,1,0
+
+
+TABLE Regeneration Types LH 80-WDM
+Name,Default type,Maximum span length,Default maximum transparency length,Regenerate all channels,Cost,Availability method,Availability regenerator value,Availability regenerator MTTR,Availability transponder value,Availability transponder MTTR,Availability muxponder value,Availability muxponder MTTR
+Default Regeneration Type,YES,100,600,NO,100 0 0 0 ,INHERIT,1,0,1,0,1,0
+
+
+TABLE Bitrate-channelcost LH 80-WDM
+Bit rate,Required slots,Default Regeneration Type regenerator,Default Regeneration Type transponder,Default Regeneration Type protection transponder,Default Regeneration Type muxponder,Default Regeneration Type transparency length
+OC-3,1,30,15,22.5,22.5,600
+OC-12,1,50,25,37.5,37.5,600
+OC-48,1,60,30,45,45,600
+OC-192,1,200,100,150,150,600
+OC-768,1,600,300,450,450,600
+OC-1536,1,1000,500,750,750,600
+OC-3072,1,1800,900,1350,1350,600
+1 GbE,1,54,27,40.5,40.5,600
+10 GbE WAN PHY,1,200,100,150,150,600
+10 GbE LAN PHY,1,200,100,150,150,600
+40 GbE,1,600,300,450,450,600
+100 GbE,1,1500,750,1125,1125,600
+ODU0,1,56,28,42,42,600
+ODU1,1,60,30,45,45,600
+ODU2,1,200,100,150,150,600
+ODU2e,1,200,100,150,150,600
+ODU3,1,600,300,450,450,600
+ODU4,1,1500,750,1125,1125,600
+
+
+TABLE Amplification Types ULH 40-WDM
+Name,Default type,Maximum span length,Cost,Availability method,Availability value,Availability MTTR
+Default Amplification Type,YES,100,125 0 0 0 ,INHERIT,1,0
+
+
+TABLE Regeneration Types ULH 40-WDM
+Name,Default type,Maximum span length,Default maximum transparency length,Regenerate all channels,Cost,Availability method,Availability regenerator value,Availability regenerator MTTR,Availability transponder value,Availability transponder MTTR,Availability muxponder value,Availability muxponder MTTR
+Default Regeneration Type,YES,100,2500,NO,100 0 0 0 ,INHERIT,1,0,1,0,1,0
+
+
+TABLE Bitrate-channelcost ULH 40-WDM
+Bit rate,Required slots,Default Regeneration Type regenerator,Default Regeneration Type transponder,Default Regeneration Type protection transponder,Default Regeneration Type muxponder,Default Regeneration Type transparency length
+OC-3,1,60,30,45,45,2500
+OC-12,1,100,50,75,75,2500
+OC-48,1,120,60,90,90,2500
+OC-192,1,400,200,300,300,2500
+OC-768,1,1200,600,900,900,2500
+OC-1536,1,2000,1000,1500,1500,2500
+OC-3072,1,3600,1800,2700,2700,2500
+1 GbE,1,108,54,81,81,2500
+10 GbE WAN PHY,1,400,200,300,300,2500
+10 GbE LAN PHY,1,400,200,300,300,2500
+40 GbE,1,1200,600,900,900,2500
+100 GbE,1,3000,1500,2250,2250,2500
+ODU0,1,112,56,84,84,2500
+ODU1,1,120,60,90,90,2500
+ODU2,1,400,200,300,300,2500
+ODU2e,1,400,200,300,300,2500
+ODU3,1,1200,600,900,900,2500
+ODU4,1,3000,1500,2250,2250,2500
+
+
+TABLE ROADM Series
+Name,LS Type,AD Type,Colorless Trib AD Ports,Contentionless Trib AD Ports,Colorless Tap AD Ports,Trib Cost,Trunk Cost,Tap Cost,Colorless Trib Cost,Contentionless Trib Cost,Colorless Tap Cost,Name Optical Side 1,Name Optical Side 2,Name Optical Side 3,Name Optical Side 4,Name Optical Side 5,Name Optical Side 6,Name Optical Side 7,Name Optical Side 8
+LH 8-WDM Series,LH 8-WDM,Trib,8,8,8,20,20,30,30,40,40,1,2,3,4,5,6,7,8
+LH 16-WDM Series,LH 16-WDM,Trib,16,16,16,40,40,60,60,80,80,1,2,3,4,5,6,7,8
+LH 40-WDM Series,LH 40-WDM,Trib,40,40,40,100,100,150,150,200,200,1,2,3,4,5,6,7,8
+LH 80-WDM Series,LH 80-WDM,Trib,80,80,80,200,200,300,300,400,400,1,2,3,4
+ULH 40-WDM Series,ULH 40-WDM,Trib,40,40,40,100,100,150,150,200,200,1,2,3,4
+
+
+TABLE DXC Types
+Name,Discrete,Cost,#Ports,Min. Aggr. Bitrate,Max. Aggr. Bitrate
+Continuous,NO,10000,1,,
+Overflow,NO,10000,1,,
+Type1,YES,300,64,,
+Type2,YES,600,128,,
+Type3,YES,1000,512,,
+Type4,YES,2000,1024,,
+Type5,YES,3500,2048,,
+Type6,YES,6000,4192,,
+
+
+TABLE ODXC Types
+Name,Discrete,Cost,#Ports,Min. Aggr. Bitrate,Max. Aggr. Bitrate
+Continuous,NO,10000,1,,
+Overflow,NO,10000,1,,
+Type1,YES,300,64,,
+Type2,YES,600,512,,
+Type3,YES,1000,2048,,
+Type4,YES,2000,8192,,
+Type5,YES,3500,16384,,
+Type6,YES,6000,32768,,
+
+
+TABLE OXC Types
+Name,Discrete,Cost,#Ports
+Continuous,NO,10000,1
+Overflow,NO,10000,1
+Type1,YES,600,32
+Type2,YES,1600,64
+Type3,YES,4000,128
+Type4,YES,10000,512
+Type5,YES,40000,1024
+Type6,YES,100000,4096
+
+
+TABLE BOXC Types
+Name,Discrete,Cost,#Ports
+Continuous,NO,10000,1
+Overflow,NO,10000,1
+Type1,YES,1000,4
+Type2,YES,1600,8
+Type3,YES,2500,16
+
+
+TABLE ODUXC Types
+Name,Discrete,Cost,#Ports
+Continuous,NO,10000,1
+Overflow,NO,10000,1
+Type1,YES,500,64
+Type2,YES,1000,512
+Type3,YES,2000,2048
+Type4,YES,4000,8192
+Type5,YES,5500,16384
+Type6,YES,8000,32768
+
+
+TABLE ROADM Types
+Name,Discrete,Cost,#Ports,Series
+LH 8-WDM Series 8D,YES,600,8,LH 8-WDM Series
+LH 16-WDM Series 8D,YES,1000,8,LH 16-WDM Series
+LH 40-WDM Series 4D,YES,1000,4,LH 40-WDM Series
+LH 40-WDM Series 8D,YES,1600,8,LH 40-WDM Series
+LH 80-WDM Series 4D,YES,1600,4,LH 80-WDM Series
+ULH 40-WDM Series 4D,YES,1000,4,ULH 40-WDM Series
+
+
+TABLE Default Availability
+Type,Method,Value,MTTR
+Cable,AVAIL,1,0
+OA,AVAIL,1,0
+REGEN,AVAIL,1,0
+TRANSPONDER,AVAIL,1,0
+OTS,AVAIL,1,0
+OMS,AVAIL,1,0
+OXC,AVAIL,1,0
+PP,AVAIL,1,0
+OADM,AVAIL,1,0
+ROADM,AVAIL,1,0
+Muxponder,AVAIL,1,0
+ODUXC,AVAIL,1,0
+IXC,AVAIL,1,0
+DXC,AVAIL,1,0
+TM,AVAIL,1,0
+ADM,AVAIL,1,0
+LOP TM,AVAIL,1,0
+SRG,AVAIL,1,0
+
+
+TABLE Delay Settings
+Propagation Delay,DCL Processing Delay,OCH Transparent Processing Delay,OCH Opaque Processing Delay,OCH IXC Processing Delay,DCL IXC Processing Delay,ODU IXC Processing Delay,ODUXC Processing Delay,PP Processing Delay,OADM Processing Delay,ROADM Processing Delay,TM Processing Delay,ADM Processing Delay,LOP Processing Delay,OA Processing Delay,Regen Processing Delay,Transponder Delay,Muxponder Delay,OTS Delay,OMS Delay
+5e-06,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

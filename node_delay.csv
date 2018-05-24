@@ -1,0 +1,17 @@
+Node Delays
+
+Id,Type,Delay,Index
+node_0,OTS,INHERIT
+node_0,OMS,INHERIT
+node_0,OXC,INHERIT
+node_0,PP,INHERIT
+node_0,ODU XC,INHERIT
+node_0,DXC,INHERIT
+node_0,LOP,INHERIT
+node_1,OTS,INHERIT
+node_1,OMS,INHERIT
+node_1,OXC,INHERIT
+node_1,PP,INHERIT
+node_1,ODU XC,INHERIT
+node_1,DXC,INHERIT
+node_1,LOP,INHERIT

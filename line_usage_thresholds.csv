@@ -1,0 +1,6 @@
+Link Thresholds
+
+Layer,From,To,Threshold
+OCH,,,1
+DCL,,,1
+LOP,,,1

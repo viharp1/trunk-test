@@ -1,0 +1,9 @@
+Device Settings
+
+Name,Type,XC Type
+node_0,DXC,Continuous
+node_0,OXC,Continuous
+node_0,ODU XC,Continuous
+node_1,DXC,Continuous
+node_1,OXC,Continuous
+node_1,ODU XC,Continuous

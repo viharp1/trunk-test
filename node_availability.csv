@@ -1,0 +1,17 @@
+Node Availabilities
+
+Id,Type,Method,Value,MTTR,Index
+node_0,OTS,INHERIT,1,0
+node_0,OMS,INHERIT,1,0
+node_0,OXC,INHERIT,1,0
+node_0,PP,INHERIT,1,0
+node_0,ODU XC,INHERIT,1,0
+node_0,DXC,INHERIT,1,0
+node_0,LOP,INHERIT,1,0
+node_1,OTS,INHERIT,1,0
+node_1,OMS,INHERIT,1,0
+node_1,OXC,INHERIT,1,0
+node_1,PP,INHERIT,1,0
+node_1,ODU XC,INHERIT,1,0
+node_1,DXC,INHERIT,1,0
+node_1,LOP,INHERIT,1,0
