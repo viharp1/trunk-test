@@ -2,3 +2,4 @@ OTS Links
 Trailing,no
 
 From,To,Length,Fibers,Cost,Designation,Delay
+node_1,node_0,241.454270383762,100,1,node_1 <-> node_0,FIBER

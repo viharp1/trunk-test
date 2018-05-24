@@ -1,3 +1,4 @@
 Line Availabilities
 
 From,To,Designation,Method,Value,MTTR
+node_1,node_0,node_1 <-> node_0,INHERIT,1,0
