@@ -1,3 +1,5 @@
 OMS Connection List
 
 From,To,Service Designation,Supported Link Designation,Required Availability,Type,Equipped Bands,Sub-routes
+node_1,node_0,node_1 <--> node_0,node_1 <-> node_0,0,No-WDM,1 ,start_node,node_1,designations,node_1 <-> node_0,subdesignations,1 ,priority,0,direction,forward,type,no_protection
+,,,,,,,start_node,node_0,designations,node_1 <-> node_0,subdesignations,2 ,priority,0,direction,reverse,type,no_protection

@@ -1,3 +1,5 @@
 Site Equipment
 
 OCH Link Name,Link Direction,Equipment Type per Site
+node_1 <-> node_0,forward,Default Regeneration Type,Default Regeneration Type
+node_1 <-> node_0,reverse,Default Regeneration Type,Default Regeneration Type

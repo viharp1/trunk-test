@@ -1,3 +1,7 @@
 Site Equipment Delays
 
 OCH Link Name,Site Index,Delay,Link Directions
+node_1 <-> node_0,0,INHERIT,forward
+node_1 <-> node_0,1,INHERIT,forward
+node_1 <-> node_0,0,INHERIT,reverse
+node_1 <-> node_0,1,INHERIT,reverse

@@ -4,3 +4,5 @@ Layer,From,To,Designation,Cost,Delay
 OTS,node_1,node_0,node_1 <-> node_0,1,FIBER
 OMS,node_1,node_0,node_1 <-> node_0,1,LOWER_LAYER
 OCH,node_1,node_0,node_1 <c> node_0,1,LOWER_LAYER
+OCH,node_1,node_0,node_1 <-> node_0,1,LOWER_LAYER
+DCL,node_1,node_0,node_1 <-> node_0,1,LOWER_LAYER
