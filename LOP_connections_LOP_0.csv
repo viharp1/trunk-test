@@ -1,0 +1,8 @@
+LOP Connection List
+Name,LOP_0
+Bit Rate,VT-1.5
+Supported Link Type,None
+
+From,To,Service Designation,Supported Link Designation,Required Availability,Client Protected,Sub-routes
+node_1,node_0,node_1 <--> node_0,,0,No,start_node,node_1,designations,node_1 <-> node_0,subdesignations,1 2 3 ,priority,0,direction,forward,type,no_protection
+,,,,,,start_node,node_0,designations,node_1 <-> node_0,subdesignations,1 2 3 ,priority,0,direction,reverse,type,no_protection

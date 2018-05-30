@@ -1,8 +1,8 @@
 DCL Connection List
 Name,DCL_0
 Bit Rate,STS-3
-Supported Link Type,None
+Supported Link Type,LOP Link
 
 From,To,Service Designation,Supported Link Designation,Required Availability,TS Assignment,Client Protected,Sub-routes
-node_1,node_0,node_1 <--> node_0,,0,Contiguous,No,start_node,node_1,designations,node_1 <-> node_0,subdesignations,1 2 3 ,priority,0,direction,forward,type,no_protection
+node_1,node_0,node_1 <--> node_0,node_1 <-> node_0,0,Contiguous,No,start_node,node_1,designations,node_1 <-> node_0,subdesignations,1 2 3 ,priority,0,direction,forward,type,no_protection
 ,,,,,,,start_node,node_0,designations,node_1 <-> node_0,subdesignations,1 2 3 ,priority,0,direction,reverse,type,no_protection
